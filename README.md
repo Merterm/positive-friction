@@ -1,14 +1,18 @@
-# Nerfies
+# Better Slow than Sorry: Introducing Positive Friction for Dialogue Systems
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the Better Slow than Sorry [paper website]().
 
-If you find Nerfies useful for your work please cite:
+If you find positive friction useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{inan2025betterslowsorryintroducing,
+      title={Better Slow than Sorry: Introducing Positive Friction for Reliable Dialogue Systems}, 
+      author={Mert İnan, Anthony Sicilia, Suvodip Dey, Vardhan Dongre, Tejas Srinivasan, 
+        Jesse Thomason, Gökhan Tür, Dilek Hakkani-Tür, Malihe Alikhani},
+      year={2025},
+      eprint={2501.17348},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.17348}, 
 }
 ```
 
