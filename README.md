@@ -1,6 +1,6 @@
 # Better Slow than Sorry: Introducing Positive Friction for Dialogue Systems
 
-This is the repository that contains source code for the Better Slow than Sorry [paper website]().
+This is the repository that contains source code for the Better Slow than Sorry [paper website](https://merterm.github.io/positive-friction/).
 
 If you find positive friction useful for your work please cite:
 ```
