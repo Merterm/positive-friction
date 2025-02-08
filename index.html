@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Paper on Positive Friction in Dialogues.">
+  <meta name="keywords" content="dialogue, conversational AI, AI, NLP, natural language processing, dialog, task-oriented dialog, conversational agents, chatbots, chatbot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Better Slow than Sorry: Positive Friction in Dialogues</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/assump_rev_arrow.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://fact-becareful.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">
+            Better Slow than Sorry: Positive Friction in Dialogues
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Better <i>Slow</i> than Sorry: Introducing Positive Friction for Reliable Dialogue Systems</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://merterm.github.io">Mert Inan</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://anthonysicilia.tech/">Anthony Sicilia</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/suvodip-dey">Suvodip Dey</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://vardhandongre.github.io/">Vardhan Dongre</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://tejas1995.github.io/">Tejas Srinivasan</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://jessethomason.com/">Jesse Thomason</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://siebelschool.illinois.edu/about/people/faculty/gokhan">Gökhan Tür</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://siebelschool.illinois.edu/about/people/faculty/dilek">Dilek Hakkani-Tür</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.malihealikhani.com/">Malihe Alikhani</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Northeastern University,</span>
+            <span class="author-block"><sup>2</sup>University of Illinois, Urbana-Champaign,</span>
+            <span class="author-block"><sup>3</sup>University of Southern California</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2501.17348"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2501.17348"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link.
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Merterm/Positive-Friction-Dialogue"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link.
+              <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- Abstract. -->
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While theories of discourse and cognitive science have long recognized the value of
+            unhurried pacing, recent dialogue research
+tends to minimize friction in conversational
+systems. Yet, frictionless dialogue risks
+fostering uncritical reliance on AI outputs,
+which can obscure implicit assumptions
+and lead to unintended consequences. To
+meet this challenge, we propose integrating positive friction into conversational AI,
+which promotes user reflection on goals,
+critical thinking on system response, and
+subsequent re-conditioning of AI systems.
+We hypothesize systems can improve goal
+alignment, modeling of user mental states,
+and task success by deliberately slowing
+down conversations in strategic moments
+to ask questions, reveal assumptions, or
+pause. We present an ontology of positive
+friction and collect expert human annotations on multi-domain and embodied goaloriented corpora. Experiments on these corpora, along with simulated interactions using state-of-the-art systems, suggest incorporating friction not only fosters accountable decision-making, but also enhances
+machine understanding of user beliefs and
+goals, and increases task success rates.
+          </p>
+        </div>
+      </div>
+    <!--/ Abstract. -->
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <img src="./static/images/main_fig_flipped.png"
+           class="teaser-image"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <p>
+              Frictionless conversations take fewer turns, but may not result in successful completion of the task given by the user. 
+              Conversations with multiple positive friction movements lead to longer but ultimately more successful conversations.
+            </p>
+            <img src="./static/images/setting.png"
+                  alt="Positive Friction Dialogue Acts."
+                  class="teaser-image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        
+        <h3 class="title is-4">Friction Extends Dialogue Acts</h3>
+        <div class="content has-text-justified">
+          <p> Friction can be applied within the same dialogue act using different movements. Further, dialogue acts comprising of requests are inherently frictive in nature, since they probe for information about the environment or the user's preferences. 
+            The most common forms of friction applied are <i>Probing</i> and <i>Overspecification</i>. Finally, the prevalence of other friction categories depends on the dialogue data and task. 
+          </p>
+        </div>
+
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <img src="./static/images/sankey-mw_teach_pfg-da2f_coldwarm.png"
+                     alt="Positive Friction Dialogue Acts."
+                     class="teaser-image"/>
+                     <p>
+                      Distribution of 50 utterances sampled from annotated dialogue acts (left) belonging to three dialogue
+                        datasets (<a href="https://github.com/budzianowski/multiwoz">MultiWOZ</a>, <a href="https://github.com/alexa/teach">TEACh</a>, <a href="https://convokit.cornell.edu/documentation/persuasionforgood.html">PersuasionForGood</a>) into friction categories (right), as annotated by GPT-4o. Most dialogue acts can occur both with and
+                      without friction. For example, in TEACh, failure notifications may lack friction, reveal assumptions by suggesting
+                      alternatives, or overspecify failure details.
+                    </p>
+              </div>
+            </div>
+
+        <!-- Mental States. -->
+        <h3 class="title is-4">Friction Helps Model User Mental States</h3>
+        <div class="content has-text-justified">
+          <p>
+            Friction movements slow down the dialogue, inducing higher valence and longer,
+            more thoughtful conversations. Further, model errors at inferring user satisfaction
+            tend to decrease for conversations when certain types of friction are identified.
+          </p>
+        </div>
+        <div class="columns is-centered">
+
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <img src="./static/images/boxplot-err-new.png"
+               class="teaser-image"/>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <img src="./static/images/boxplot-timing-new.png"
+               class="teaser-image"/>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <br/>
+        <!--/ Mental States. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Friction Helps Accomplish User Goals</h3>
+        <div class="content has-text-justified">
+          <p>
+            For both <a href="https://github.com/budzianowski/multiwoz">MultiWOZ</a> and <a href="https://github.com/alfworld/alfworld">ALFWorld</a>, applying friction categories improves task success in goal-oriented conversations. 
+            The results demonstrate that incorporating friction can enhance the agent's understanding of user goals, resulting in higher task success.
+          </p>
+        </div>
+        <div class="columns is-centered">
+
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <img src="./static/images/trial_anal_1.png"
+               class="teaser-image"/>
+              </div>
+    
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="columns is-centered">
+              <div class="column content">
+                <img src="./static/images/trial_analy_2.png"
+               class="teaser-image"/>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{inan2025betterslowsorryintroducing,
+      title={Better Slow than Sorry: Introducing Positive Friction for Reliable Dialogue Systems}, 
+      author={Mert İnan, Anthony Sicilia, Suvodip Dey, Vardhan Dongre, Tejas Srinivasan, 
+        Jesse Thomason, Gökhan Tür, Dilek Hakkani-Tür, Malihe Alikhani},
+      year={2025},
+      eprint={2501.17348},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2501.17348}, 
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website has been created using the source code from <a
+              href="https://github.com/nerfies/nerfies.github.io">this website</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
